@@ -1,0 +1,47 @@
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0 4em;
+    padding: 5em;
+    font-family: 'Josefin Sans', sem serifa;
+    
+}
+
+.apresentacao{
+    font-size:55px;
+    font-family:'Montserrat', sem serifa;
+}
+
+.apresentacao-topicos{
+    font-size: 37px;
+
+}
+
+.lista-topicos{
+    font-size:20px;
+}
+
+.paragrafo{
+    font-size:30px;
+    font-family: 'Josefin Sans', sem serifa;
+}
+
+.lista-de-registros{
+    margin:0 0em 50em 40em;
+    padding: 20em;
+    margin-left: 0px;
+    
+ 
+}
+
+.dev{
+    margin:0 0 7em 15em;
+}
+
+
+
+
+
+
