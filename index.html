@@ -10,12 +10,11 @@
     </style>
 </head>
 <body>
-
-    <h1 class="apresentacao"> sistema de cadastro para usuarios</h1>
+    <h1 class="apresentacao"> sistema de cadastro para usuários</h1>
     <p class="paragrafo">Neste sistema elaboramos uma tela de cadastro para o usuario</p>
     <h1 class="apresentacao-topicos">neste sistema voce vai ver:</h1>
     <ul class="lista">
-        <li class="lista-topicos">Funcionaliades para a interacao do usuario</li>
+        <li class="lista-topicos">Funcionaliades para a interacao do usuário</li>
         <li class="lista-topicos">Tela de cadastro para o usuario </li>
         <li class="lista-topicos">Exibicao dos cadastro em uma tabela</li>
         <li class="lista-topicos">interface e interacao</li>
@@ -26,14 +25,42 @@
 
         </div>
 
-    <section class="inputs-apresentacao">
+    <section class="formulario">
+        <div id="dfpessoas" class="dfpessoas">
+            <form id="fpessoas">
+                <label class="negrito">nome completo </label><br/>
+                <input type="text" id="txtNome" /><br /><br />
+                <label class="negrito">data de nascimento</label><br />
+                <input type="date" id="txtData"/><br /><br />
+                <label class="negrito">sexo(feminino/masculino)</label><br />
+                <input type="text" id="txtSexo"/><br /><br />
+                <label class="negrito">endereco</label><br />
+                <input type="text" id="txtEndereco"/><br /><br />
+                <label class="negrito">celular</label><br />
+                <input type="tel" id="txtCelular"/><br /><br />
+                <label class="negrito">E-mail</label><br />
+                <input type="text" id="txtEmail"/><br /><br />
+            </form>
+            <button onclick="pegarDadosUsuarios()">adiciona pessoa</button>
+        </div>
+        <br /><br />
+        <div id="dtpessoas" class="idd">
+            <table id="tbpessoas">
+                <tr>
+                     <td>nome completo</td> 
+                     <td>data de nascimento</td>   
+                     <td>sexo(feminino/masculino)</td>
+                     <td>endereco</td>
+                     <td>celular</td>
+                     <td>E-mail</td>
+            
+                </tr>
+            </table>
 
-        <div class="inputs">
-            <h1>cadastrar</h1>
-            <input type="name" placeholder="nome completo">
-        </div>          
+        </div>
 
     </section>
-    <script src="js/main.js"></script>
+    
 </body>
+<script src="js/main.js"></script>
 </html>
