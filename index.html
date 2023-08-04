@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1 class="apresentacao"> sistema de cadastro para usuários</h1>
-    <p class="paragrafo">Neste sistema elaboramos uma tela de cadastro para o usuario</p>
+    <p class="paragrafo">Neste sistema elaboramos uma tela de cadastro para o usuario e uma tabela com os cadastro</p>
     <h1 class="apresentacao-topicos">neste sistema voce vai ver:</h1>
     <ul class="lista">
         <li class="lista-topicos">Funcionaliades para a interacao do usuário</li>
@@ -19,27 +19,35 @@
         <li class="lista-topicos">Exibicao dos cadastro em uma tabela</li>
         <li class="lista-topicos">interface e interacao</li>
     </ul>   
-
+        <h1 class="obj">Objetivo:</h1>
+        <p class="objetivo-formulario">O objetivo é criar um formulario para o acesso do usuario, e em seguida uma exibiçao de uma tabela de todos os dados colocado pelo usuário</p>
         <div class="imagem">
             <img src="imgg.webp">
 
         </div>
-
+        <h2 class="form">formulario:</h2>
     <section class="formulario">
         <div id="dfpessoas" class="dfpessoas">
             <form id="fpessoas">
-                <label class="negrito">nome completo </label><br/>
-                <input class ="idd"type="text" id="txtNome" /><br /><br />
-                <label class="negrito">data de nascimento</label><br />
-                <input class ="idd"type ="date" id="txtData"/><br /><br />
-                <label class="negrito">sexo(Feminino/Masculino)</label><br />
-                <input class ="idd"type="text" id="txtSexo"/><br /><br />
-                <label class="negrito">endereco</label><br />
-                <input class ="idd"type="text" id="txtEndereco"/><br /><br />
-                <label class="negrito">celular</label><br />
-                <input class ="idd"type="tel" id="txtCelular"/><br /><br />
-                <label class="negrito">Email</label><br />
-                <input class ="idd"type="text" id="txtEmail"/><br /><br />
+                    <label class="campo-etiqueta">nome completo </label><br/>
+                    <input class ="idd"type="text" id="txtNome" required> <br /><br />
+                    <span class="mensagem erro"></span>
+                    <label class="campo-etiqueta">data de nascimento</label><br />
+                    <input class ="idd"type ="date" nome="date" id="txtData" required/><br /><br />
+                    <span class="mensagem erro"></span>
+                    <label class="campo-etiqueta">sexo(Feminino/Masculino)</label><br />
+                    <input class ="idd"type="text" nome="text" id="txtSexo" required/><br /><br />
+                    <span  class="mensagem erro"></span>
+                    <label class="campo-etiqueta">endereco</label><br />
+                    <input class ="idd"type="text" id="txtEndereco" required><br /><br />
+                    <span class="mensagem erro"></span>
+                    <label class="campo-etiqueta">celular</label><br />
+                    <input class ="idd"type="tel" id="txtCelular"maxlength="11"required/><br /><br />
+                    <label class="campo-etiqueta">email</label><br />
+                    <span class="mensagem erro"></span>
+                    <input class ="idd"type="text" id="txtEmail"required/><br /><br />
+
+                <small id type="textForm"></small>
             </form>
             <button onclick="enviarDados()">Enviar Dados</button>
         </div>
@@ -61,6 +69,7 @@
 
     </section>
     <script src="js/main.js"></script>
+    <footer class="rodape">Desenvolvido por Caique Felipe</footer>
 </body>
 
 </html>
