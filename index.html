@@ -45,24 +45,36 @@
                     <input class ="idd"type="tel" id="txtCelular"maxlength="11"required/><br /><br />
                     <label class="campo-etiqueta">email</label><br />
                     <span class="mensagem erro"></span>
-                    <input class ="idd"type="text" id="txtEmail"required/><br /><br />
+                    <input class ="idd"type="email" id="txtEmail" required/><br /><br />
 
                 <small id type="textForm"></small>
             </form>
-            <button onclick="enviarDados()">Enviar Dados</button>
+            <button onclick="enviarDados()">Enviar Dados</button> 
         </div>
         <br /><br />
-        <div id="dtpessoas" class="iddd">
-            <table id="tbpessoas">
-                <tr>
-                     <td>nome completo</td> 
-                     <td>data de nascimento</td>   
-                     <td>sexo(feminino/masculino)</td>
-                     <td>endereco</td>
-                     <td>celular</td>
-                     <td>Email</td>
-            
-                </tr>
+        <div id="dtpessoas">
+            <h3 class="tabela-apresentacao">tabela</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nome completo</th>
+                        <th>data de nascimento</th>
+                        <th>sexo(feminino/masculino)</th>
+                        <th>endereco</th>
+                        <th>celular</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td  class="dadoss">caique felipe</td>
+                        <td>11/06/2006</td>
+                        <td>masculino</td>
+                        <td>izabel ferreirA COELHO</td>
+                        <td>15998598217</td>
+                        <td>caiquefelipe12@gmail.com</td>
+                    </tr>
+                </body>
             </table>
 
         </div>
