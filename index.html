@@ -28,7 +28,7 @@
         <h2 class="form">formulario:</h2>
     <section class="formulario">
         <div id="dfpessoas" class="dfpessoas">
-            <form id="fpessoas">
+            <div id="fpessoas">
                     <label class="campo-etiqueta">nome completo </label><br/>
                     <input class ="idd"type="text" id="txtNome" required> <br /><br />
                    
@@ -39,7 +39,7 @@
 
                     <label class="campo-etiqueta">sexo(Feminino/Masculino)</label><br />
                     <input class ="idd"type="text" id="txtSexo" required/><br /><br />
-               >
+               
 
                     <label class="campo-etiqueta">endereco</label><br />
                     <input class ="idd"type="text" id="txtEndereco" required><br /><br />
@@ -51,13 +51,14 @@
                     <label class="campo-etiqueta">email</label><br />
                     <input class ="idd"type="email" id="txtEmail" required/><br /><br />
 
-                    <button onclick="enviarDados()">Enviar Dados</button> 
+                    <button onclick="enviarDados()" class="botao">Enviar Dados</button> 
                     <ul id="lista">
+                        
 
                     </ul>
 
                 <small id type="textForm"></small>
-            </form>
+                </div>
         </div>
         <br /><br />
 
