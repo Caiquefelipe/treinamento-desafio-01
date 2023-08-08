@@ -30,11 +30,11 @@
         <div id="dfpessoas" class="dfpessoas">
             <div id="fpessoas">
                     <label class="campo-etiqueta">nome completo </label><br/>
-                    <input class ="idd"type="text" id="txtNome" required> <br /><br />
+                    <input class ="idd"type="text" id="txtNome" required maxlength="25" minlength="2"> <br /><br />
                    
 
                     <label class="campo-etiqueta">data de nascimento</label><br />
-                    <input class ="idd"type ="data" nome="date" id="txtData" required/><br /><br />
+                    <input class ="idd"type ="date" id="txtData"required /><br /><br />
                    
 
                     <label class="campo-etiqueta">sexo(Feminino/Masculino)</label><br />
@@ -42,16 +42,18 @@
                
 
                     <label class="campo-etiqueta">endereco</label><br />
-                    <input class ="idd"type="text" id="txtEndereco" required><br /><br />
+                    <input class ="idd"type="text" id="txtEndereco"><br /><br />
                   
 
                     <label class="campo-etiqueta">celular</label><br />
-                    <input class ="idd"type="celular" id="txtCelular"maxlength="11"required/><br /><br />
+                    <input class ="idd"type="celular" id="txtCelular" required maxlength="11"><br /><br />
 
                     <label class="campo-etiqueta">email</label><br />
-                    <input class ="idd"type="email" id="txtEmail" required/><br /><br />
+                    <input class ="idd"type="email" id="txtEmail"required maxlength="50" /><br /><br />
 
                     <button onclick="enviarDados()" class="botao">Enviar Dados</button> 
+                    
+
                     <ul id="lista">
                         
 
@@ -61,10 +63,22 @@
                 </div>
         </div>
         <br /><br />
-
+        <table id="datatable">
+            <thead>
+                <th>nome completo</th>
+                <th>data de nascimento</th>
+                <th>sexo(feminino/masculino)</th>
+                <th>endereco</th>
+                <th>celular</th>
+                <th>email</th>
+            </thead>
+        </table>
+        
     </section>
     <script src="js/main.js"></script>
+    <div class="rod">
     <footer class="rodape">Desenvolvido por Caique Felipe</footer>
+    
 </body>
 
 </html>
