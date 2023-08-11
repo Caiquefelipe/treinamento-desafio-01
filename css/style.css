@@ -1,7 +1,14 @@
-body{
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
     height: 100vh;
     box-sizing: border-box;
-    padding:10em
+    padding:10em;
+    background-color: az
 }
 
 .apresentacao{
@@ -21,7 +28,120 @@ body{
     font-size: 20px;
 }
 
-.inputs-apresentacao{
-    margin:20em 0 30em 40em;
-    padding-bottom: 30em;
+#dfpessoas{
+    font:14px verdana;
+    margin-left: 40%;
+}
+
+#dtpessoas{
+    font:14px verdana;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr td{
+    width: 160px;
+    padding:15px;
+}
+
+
+.idd{
+    width: 30em;
+    height: 1.8em;
+}
+.obj{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sem serifa;
+    margin-top: 27px;
+}
+
+.objetivo-formulario{
+    font-size: 20px;
+}
+
+.form{
+    margin-left: 17em;
+    font-size: 40px;
+}
+
+.rodape{
+    font-size: 20px;
+    background-color: bisque;
+    text-align: center;
+    padding: 2em;
+    margin-top:5em;
+}
+
+#table{
+    width: 800px;
+}
+
+    
+ .botao{
+    padding: 0.6em;
+    margin-bottom: 40px;
+ }
+#datatable,th{
+    width: 70em;
+    border: 1px solid black;
+}  
+
+td{
+    border:1px solid black;
+}
+.tela-de-cadastro{
+    font-size: 40px;
+    margin: 0 0 2em 13em;
+}
+.mm{
+    padding:0.5em;
+    width: 400px;
+}
+
+.cadastro-tela{
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(79, 79, 238);
+    padding: 0.5em;
+    border-radius: 12px;
+    color:azure; 
+}
+
+#tableEjetar{
+    background-color: rgb(189, 186, 186);
+}
+
+tbody > tr:nth-child(2n){
+    background-color: rgb(255, 255, 255);
+}
+
+#tabelaDeDados{
+    margin: 12px 0 0 200px;
+    text-align: center;
+}
+
+.exibicao-tabela{
+    font-size: 30px;
+    margin: 4em 0 2em 19em;
+}
+
+.voltar-tela-inicial{
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(79, 79, 255);
+    color:azure;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+#tabelaDeDados{
+    font-size: 20px;
+}
+
+.cadastro-tela:hover{
+    color: rgb(174, 174, 243);
+}
+
+.voltar-tela-inicial:hover{
+    color:  rgb(174, 174, 243);;
 }
